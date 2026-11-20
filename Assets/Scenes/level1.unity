@@ -5171,7 +5171,6 @@ GameObject:
   m_Component:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
-  - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
@@ -5180,14 +5179,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &519420029
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
 --- !u!114 &519420030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5312,6 +5303,7 @@ GameObject:
   - component: {fileID: 644760386}
   - component: {fileID: 644760385}
   - component: {fileID: 644760384}
+  - component: {fileID: 644760390}
   m_Layer: 0
   m_Name: hazard
   m_TagString: hazard
@@ -5511,6 +5503,121 @@ Transform:
   m_Children: []
   m_Father: {fileID: 748327436}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &644760390
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644760383}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 4fcc3614f4f0faa4ea0d5fd0f93a5866, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.294
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.004720062
+      value: 0.9916649
+      inSlope: -3.0011995
+      outSlope: -3.0011995
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.65250653
+      value: 0.125
+      inSlope: -0.47383952
+      outSlope: -0.47383952
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.41157103
+    - serializedVersion: 3
+      time: 0.99435425
+      value: 0.000005096197
+      inSlope: -0.1906054
+      outSlope: -0.1906054
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.4475515
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.98017526
+      value: 1.0208293
+      inSlope: 1.244456
+      outSlope: 1.244456
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.11272154
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &726449329
 GameObject:
   m_ObjectHideFlags: 0
@@ -6360,7 +6467,7 @@ GameObject:
   - component: {fileID: 1064953472}
   - component: {fileID: 1064953471}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: rightwall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6790,7 +6897,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1913386033}
-  - {fileID: 1793767910}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1569873280
@@ -6949,6 +7055,7 @@ GameObject:
   - component: {fileID: 1615469906}
   - component: {fileID: 1615469912}
   - component: {fileID: 1615469913}
+  - component: {fileID: 1615469914}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -7377,6 +7484,14 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!81 &1615469914
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615469905}
+  m_Enabled: 1
 --- !u!1 &1640226574
 GameObject:
   m_ObjectHideFlags: 0
@@ -7390,7 +7505,7 @@ GameObject:
   - component: {fileID: 1640226576}
   - component: {fileID: 1640226575}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: cameracanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7493,7 +7608,7 @@ GameObject:
   - component: {fileID: 1711177192}
   - component: {fileID: 1711177193}
   m_Layer: 0
-  m_Name: Square
+  m_Name: leftwall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7767,7 +7882,7 @@ GameObject:
   - component: {fileID: 1793767912}
   - component: {fileID: 1793767911}
   m_Layer: 0
-  m_Name: Canvas
+  m_Name: worldcanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7786,11 +7901,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 936569635}
-  m_Father: {fileID: 1569873279}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 5.56, y: -2.79}
+  m_AnchoredPosition: {x: -0.20000029, y: 0.48000002}
   m_SizeDelta: {x: 22.2817, y: 24.9003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1793767911
@@ -7866,7 +7981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1913386033}
   m_Layer: 0
-  m_Name: spawnpoint
+  m_Name: spawnpointtree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8015,7 +8130,8 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1615469911}
   - {fileID: 748327436}
+  - {fileID: 1793767910}
   - {fileID: 1640226578}
-  - {fileID: 863648394}
   - {fileID: 1569873279}
   - {fileID: 831319305}
+  - {fileID: 863648394}
